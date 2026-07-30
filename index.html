@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FlowBoard</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <aside class="sidebar">
+            <div class="logo-wrapper">
+                <img class="logo" src="assets/icons/logo-to-do.png" alt="flowboard logo">
+                <h1 class="site-title">FlowBoard</h1>
+            </div>
+            <nav class="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <button class="nav-btn" type="button">
+                            <img class="nav-icon" src="assets/icons/checkmark-icon.svg" alt="checkmark icon">
+                            Checklist
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-btn" type="button">
+                            <img class="nav-icon" src="assets/icons/notes-icon.svg" alt="notes icon">
+                            Notes
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-btn" type="button">
+                            <img class="nav-icon" src="assets/icons/calendar-icon.svg" alt="calendar icon">
+                            Calendar
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-btn">
+                            <img class="nav-icon" src="assets/icons/pallete-icon.svg" alt="theme icon">
+                            Theme
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content">
+            <div class="content-container">
+
+                <section class="view checklist-view">
+                    <h2 class="section-title">My Checklist</h2>
+                    <div class="add-new">
+                        <input class="new-task" type="text" placeholder="Add new task..." >
+                        <button class="add-new-btn">Add</button>
+                    </div>
+                    <div class="checklist">
+                        <div class="task">
+                            <label class="task-label">
+                            <input class="checkbox" type="checkbox">
+                            <span class="task-text">First Task</span>
+                            </label>
+                            <button class="trash-btn">
+                                <img class="trash-icon" src="assets/icons/trashcan-icon.svg" alt="delete task">
+                            </button>
+                        </div>
+                        
+                    </div>
+                </section>
+
+                <section class="view notes-view">
+                    <h2 class="section-title">Notes</h2>
+                    <div class="add-new">
+                        <input class="new-task" type="text" placeholder="Add new note..." >
+                        <button class="add-new-btn">Add</button>
+                    </div>
+                    <div class="notes">
+                        <div class="note">
+                            <label class="note-label">
+                            <input class="checkbox" type="checkbox">
+                            <span class="note-text">First Task</span>
+                            </label>
+                            <button class="trash-btn">
+                                <img class="trash-icon" src="assets/icons/trashcan-icon.svg" alt="delete task">
+                            </button>
+                        </div>
+                    </div>   
+                </section>
+                <section class="view calendar-view">
+
+                    <div class="calendar-interactions">
+                        <h2 class="section-title">Calendar</h2>
+                        <div class="month-switch">
+                            <button class="prev-month-btn">←</button>
+                            <span class="month">July</span>
+                            <button class="next-month-btn">→</button>
+                        </div>
+                        <button class="new-event-btn">Add Event</button>
+                    </div>
+                    <div class="calendar-grid">
+                        <ul class="weekdays">
+                            <li class="weekday">Mon</li>
+                            <li class="weekday">Tue</li>
+                            <li class="weekday">Wed</li>
+                            <li class="weekday">Thu</li>
+                            <li class="weekday">Fri</li>
+                            <li class="weekday">Sat</li>
+                            <li class="weekday">Sun</li>
+                        </ul>
+                        <ul class="days">
+                        </ul>
+                        
+                    </div>
+                </section>
+            </div>
+        </main>
+        <script src="js/script.js"></script>
+    </body>
+</html>
