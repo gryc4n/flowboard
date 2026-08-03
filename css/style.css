@@ -355,6 +355,6 @@ CALENDAR
 VIEW
 */
 
-.checklist-view, .notes-view{
+.calendar-view, .notes-view{
     display: none;
 }
